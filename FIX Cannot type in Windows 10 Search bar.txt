@@ -1,0 +1,42 @@
+
+FIX: Cannot type in Windows 10 Search bar. (Solved)
+b1: 
+C:\Windows\system32\ctfmon.exe
+
+1. Simultaneously press the Windows + R keys to open run command box.
+2. In run command box, copy paste the below command and press Enter:
+
+C:\Windows\system32\ctfmon.exe
+
+
+3. try to type on the search bar.
+trang này xử lí cái việc  FIX: Cannot type in Windows 10 Search bar. (Solved)
+https://www.wintips.org/fix-cannot-type-in-windows-10-search-bar/#method-2
+
+--------------------------------------------
+Bật tắt tường lửa
+
+netsh advfirewall set allprofiles state off
+netsh advfirewall set allprofiles state on
+
++++++++++++++++++++++++++++++++++++++++++++++++
+cd C:\Program Files\Microsoft Office\Office16
+
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+cscript ospp.vbs /sethst:kms.saigondata.us
+cscript ospp.vbs /act
+
+==============================================================
+Báo cáo pin
+Để thực hiện báo cáo pin, bạn hãy mở Command Prompt với quyền quản trị bằng cách tìm kiếm trong menu Start sau đó gõ lệnh sau:
+
+powercfg /batteryreport
+
+Lệnh trên sẽ hiện thị báo cáo pin được lưu ở vị trí sau trong laptop:
+
+C:WINDOWSsystem32battery-report.htm
+
+Khi tìm được phần báo cáo, bạn hãy tìm vấn đề về pin. Tại thời điểm này, bạn cũng có thể thử một lệnh khác tạo báo cáo pin:
+powercfg -energy
